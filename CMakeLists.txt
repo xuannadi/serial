@@ -39,6 +39,8 @@ else()
     target_link_libraries(${PROJECT_NAME} setupapi)
 endif()
 
+set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE ON)
+
 ## Uncomment for example
 add_executable(serial_example examples/serial_example.cc)
 add_dependencies(serial_example ${PROJECT_NAME})
