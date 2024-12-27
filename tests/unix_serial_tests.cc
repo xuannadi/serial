@@ -20,8 +20,9 @@ void loop()
 #include <string>
 #include "gtest/gtest.h"
 
-#include <boost/bind.hpp>
-
+// Toa modified 2 following lines (original: #include <boost/bind.hpp>)
+#include <boost/bind/bind.hpp>
+using namespace boost::placeholders;
 // Use FRIEND_TEST... its not as nasty, thats what friends are for
 // // OMG this is so nasty...
 // #define private public
